@@ -37,6 +37,7 @@ void setKickstart(char c) {
   if (c == '0') {
     digitalWrite(A18_GPIO, LOW);
     digitalWrite(A19_GPIO, LOW);
+    preferences.putString("kick_value", String(c));
   } else if (c == '1') {
     digitalWrite(A18_GPIO, HIGH);
     digitalWrite(A19_GPIO, LOW);
