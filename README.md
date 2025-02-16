@@ -26,6 +26,17 @@ So far, I have tested this only on an Amiga 500 rev 6A. I have no idea if it wor
   <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/IMG_9772.JPG" alt="Image3" style="width: 32%;">
 </div>
 
+---
+
+## Installation From the Binary File
+
+You can load the binary file **AmigaBlueKick.bin**, which is located in the BIN folder.
+The tool to upload the binary is the `esptool`. This is available as web page [esptool](https://espressif.github.io/esptool-js/). The web page should be compatible with Chrome browser or similar, probably not with Firefox, but on some operating system (like Mac OS) there can be a problem of binding the port to the web page.
+
+1. Disconnect the adapter from the AMIGA.
+2. Press and hold the **BOOT** button before connecting the board to the USB cable on the computer. Then, connect the board, wait a second, and release the button.
+3. Go on the website, click on Connect, select the port for your adapter, change the Flash Address into 0x0000 and upload the firmware.
+
 
 WARNING: DON'T CONNECT THE USB OF THE ESP32 WHEN IT IS CONNECTED TO THE AMIGA.
 THE POWER WILL ARRIVE DIRECTLY TO THE KICKSTART AND THE MAIN BOARD AND MAY DESTROY THEM.
