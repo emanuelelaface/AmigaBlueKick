@@ -90,14 +90,14 @@ void setup() {
   String savedValue = preferences.getString("kick_value", "0"); 
   setKickstart(savedValue[0]);
 
-  BLEDevice::init("Amiga Kickstart Control");
+  BLEDevice::init("AmigaKickstartControl");
   pServer = BLEDevice::createServer();
   pServer->setCallbacks(new MyServerCallbacks());
 
-  BLEService *pService = pServer->createService("12345678-1234-1234-1234-123456789ABC");
+  BLEService *pService = pServer->createService("A500");
 
   pCharacteristic = pService->createCharacteristic(
-                      "87654321-4321-4321-4321-CBA987654321",
+                      "1234",
                       BLECharacteristic::PROPERTY_READ |
                       BLECharacteristic::PROPERTY_WRITE
                     );
@@ -107,7 +107,7 @@ void setup() {
   pService->start();
 
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
-  pAdvertising->addServiceUUID("12345678-1234-1234-1234-123456789ABC");
+  pAdvertising->addServiceUUID("A500");
   pAdvertising->setScanResponse(true);
   pAdvertising->setMinPreferred(0x06);
   pAdvertising->setMinPreferred(0x12);
