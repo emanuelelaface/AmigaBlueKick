@@ -49,8 +49,8 @@ So, I will try to contact Amiga Forever to obtain a statement allowing me to use
 
 <p align="center">
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS1.png" alt="iOS Image1" style="width: 50%;">
-  <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS2.png" alt="iOS Image2" style="width: 50%;">
+  <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS1.png" alt="iOS Image1" style="width: 30%;">
+  <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS2.png" alt="iOS Image2" style="width: 30%;">
 </div>
 </p>
 
