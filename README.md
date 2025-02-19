@@ -48,7 +48,7 @@ I also submitted a version that removes all logos and doesn't mention Amiga, but
 So, I will try to contact Amiga Forever to obtain a statement allowing me to use the name "Amiga" for this project, though I don't have much hope that they will even consider my request. Meanwhile, if anyone wants to use the app, they can compile and install it on their phone via Xcode.
 
 <p align="center">
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; center: space-between;">
   <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS1.png" alt="iOS Image1" style="width: 30%;">
   <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS2.png" alt="iOS Image2" style="width: 30%;">
 </div>
