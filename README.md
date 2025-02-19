@@ -37,6 +37,17 @@ The tool to upload the binary is the `esptool`. This is available as web page [e
 2. Press and hold the **BOOT** button before connecting the board to the USB cable on the computer. Then, connect the board, wait a second, and release the button.
 3. Go on the website, click on Connect, select the port for your adapter, change the Flash Address into 0x0000 and upload the firmware.
 
+---
+
+## iOS App companion
+
+To switch Kickstart, any Bluetooth explorer is fine, but I created an iOS app to handle it more easily. Unfortunately, Apple doesn't allow me to publish it on the App Store, claiming that I may be violating copyright, even though the version of the Amiga logo I use is public domain (according to Wikipedia) and I don't profit from this project.
+
+I also submitted a version that removes all logos and doesn't mention Amiga, but they still refuse to publish it, stating that my application "controls Amiga computers."
+
+So, I will try to contact Amiga Forever to obtain a statement allowing me to use the name "Amiga" for this project, though I don't have much hope that they will even consider my request. Meanwhile, if anyone wants to use the app, they can compile and install it on their phone via Xcode.
+
+---
 
 WARNING: DON'T CONNECT THE USB OF THE ESP32 WHEN IT IS CONNECTED TO THE AMIGA.
 THE POWER WILL ARRIVE DIRECTLY TO THE KICKSTART AND THE MAIN BOARD AND MAY DESTROY THEM.
