@@ -80,13 +80,6 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                     Spacer()
-                    /*
-                    Text("Select Kickstart")
-                        .font(.system(size: 30))
-                        .foregroundColor(.black)
-                    Spacer()
-*/
-                    
                     // Button 1
                     Button(action: {
                         bleManager.send(message: "0")
