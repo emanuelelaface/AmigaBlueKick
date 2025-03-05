@@ -94,7 +94,7 @@ void setup() {
   pServer = BLEDevice::createServer();
   pServer->setCallbacks(new MyServerCallbacks());
 
-  BLEService *pService = pServer->createService("AmigaKickstartControl");
+  BLEService *pService = pServer->createService("A500");
 
   pCharacteristic = pService->createCharacteristic(
                       "1234",
@@ -107,7 +107,7 @@ void setup() {
   pService->start();
 
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
-  pAdvertising->addServiceUUID("AmigaKickstartControl");
+  pAdvertising->addServiceUUID("A500");
   pAdvertising->setScanResponse(true);
   pAdvertising->setMinPreferred(0x06);
   pAdvertising->setMinPreferred(0x12);
