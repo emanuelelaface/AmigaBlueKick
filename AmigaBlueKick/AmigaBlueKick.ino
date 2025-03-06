@@ -20,9 +20,9 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 #include "BLEUtils.h"
 #include "BLE2902.h"
 
-#define A18_GPIO 6
-#define A19_GPIO 7
-#define RESET_GPIO GPIO_NUM_3
+#define A18_GPIO   6
+#define A19_GPIO   7
+#define RESET_GPIO 3
 
 #define INACTIVITY_TIMEOUT 30000
 
@@ -91,7 +91,7 @@ void setup() {
   pinMode(A18_GPIO, OUTPUT);
   pinMode(A19_GPIO, OUTPUT);
   pinMode(RESET_GPIO, INPUT_PULLUP);
-  esp_sleep_enable_ext0_wakeup(RESET_GPIO, 0);
+  esp_sleep_enable_ext0_wakeup( (gpio_num_t)RESET_GPIO, 0 );
 
   preferences.begin("kickstart", false); 
   String savedValue = preferences.getString("kick_value", "0"); 
