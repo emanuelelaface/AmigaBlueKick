@@ -14,7 +14,9 @@ The board is powered on only at the Amiga's first startup and remains active for
 
 When the Kickstart is switched, the Amiga will become unresponsive because the CPU will not be properly initialized. A reboot is required.
 
-So far, I have tested this only on an Amiga 500 rev 6A. I have no idea if it works on other machines, but I see no reason why it shouldn't.
+There if the GPIO 3 is connected to the keyboard reset of Amiga, the ESP32 will be available also when the Amiga has a reset, also the ESP will reset the Amiga for each Kickstart Switch making the change smoother, otherwise the user has to reset manually.
+
+So far, I have tested this only on an Amiga 500 rev 6A and on Amiga 600. I have no idea if it works on other machines, but I see no reason why it shouldn't.
 
 
 <p align="center">
