@@ -6,7 +6,7 @@ It is common practice to store multiple Kickstart ROMs on large EPROMs that can 
 
 Traditionally, a mechanical switch is mounted outside the Amiga by drilling a hole in the plastic case (something I can't even imagine doing). More advanced methods use the reset wire to cycle through Kickstarts at each boot or based on how long the user holds Control-Amiga-Amiga, but even this method requires a wire soldered to the motherboard.
 
-The idea is to make the switch wireless via Bluetooth. To achieve this, I used an ESP32S3 board (though an ESP32C3 should work just as well and costs less—I simply had an S3 spare at home). The board is wired to the Kickstart EPROM with power and two GPIOs connected to A18 and A19, allowing control via any Bluetooth (BLE) client, such as a computer or smartphone.
+The idea is to make the switch wireless via Bluetooth. To achieve this, I used an ESP32S3 board. It is probably possible to use something else but it has to support the GPIO hold state after the Deep Sleep in order to keep the kickstart not floating. The board is wired to the Kickstart EPROM with power and two GPIOs connected to A18 and A19, allowing control via any Bluetooth (BLE) client, such as a computer or smartphone.
 
 The code is very simple: it creates a Bluetooth service that accepts ASCII characters 0, 1, 2, and 3, and based on the input, it sets the GPIOs connected to the EPROM either HIGH or LOW.
 
