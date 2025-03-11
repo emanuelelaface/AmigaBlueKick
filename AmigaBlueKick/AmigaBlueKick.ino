@@ -89,6 +89,8 @@ class MyCharacteristicCallbacks : public BLECharacteristicCallbacks {
 };
 
 void setup() {
+  gpio_hold_dis((gpio_num_t)A18_GPIO);
+  gpio_hold_dis((gpio_num_t)A19_GPIO);
   pinMode(A18_GPIO, OUTPUT);
   pinMode(A19_GPIO, OUTPUT);
   pinMode(RESET_GPIO, INPUT_PULLUP);
@@ -130,10 +132,9 @@ void loop() {
       gpio_hold_en( (gpio_num_t)A18_GPIO );
       gpio_hold_en( (gpio_num_t)A19_GPIO );
       esp_deep_sleep_start();
-      gpio_hold_dis( (gpio_num_t)A18_GPIO );
-      gpio_hold_dis( (gpio_num_t)A19_GPIO );
     }
     if (newkick) {
+      vTaskDelay(pdMS_TO_TICKS(500));
       pinMode(RESET_GPIO, OUTPUT);
       vTaskDelay(pdMS_TO_TICKS(500));
       digitalWrite(RESET_GPIO, LOW);
