@@ -55,7 +55,7 @@ Luckily, thanks to the European Union directive, we now have alternative stores 
 This app is now available on [AltStore](https://altstore.io/). After following their instructions to install the alternative store, you can add my repository using the URL `app.scumm.it/index.json`. Once the repository is added to AltStore, the app will be available for installation.
 
 ### Android
-For Android, user @ibaldachini wrote and built the APK version, which can be found in the corresponding [folder](https://github.com/emanuelelaface/AmigaBlueKick/tree/main/android/AmigaBlueKick/app/release). There is currently no official distribution on Google Play due to the complications involved in meeting Google's beta testing and other requirements.
+For Android, user [@ibaldachini](https://github.com/ibaldachini) wrote and built the APK version, which can be found in the corresponding [folder](https://github.com/emanuelelaface/AmigaBlueKick/tree/main/android/AmigaBlueKick/app/release). There is currently no official distribution on Google Play due to the complications involved in meeting Google's beta testing and other requirements.
 
 ---
 
