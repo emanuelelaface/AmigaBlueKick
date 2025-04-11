@@ -41,8 +41,8 @@ The tool to upload the binary is the `esptool`. This is available as web page [e
 
 ---
 
-## iOS App companion
-
+## Mobile App companion
+### iOS
 To switch Kickstart, any Bluetooth explorer is fine, but I created an iOS app to make it easier to use.
 The app is not available on the usual App Store because Apple has absurd rules that prevent me from using the name "Amiga" for no reason, and they refuse to discuss it.
 Luckily, thanks to the European Union directive, we now have alternative stores where we can distribute our apps!
@@ -52,6 +52,9 @@ This app is now available on [AltStore](https://altstore.io/). After following t
   <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS1.png" alt="iOS Image1" style="width: 25%;">
   <img src="https://github.com/emanuelelaface/AmigaBlueKick/blob/main/images/iOS2.png" alt="iOS Image2" style="width: 25%;">
 </p>
+
+### Android
+For Android, user @ibaldachini wrote and built the APK version, which can be found in the corresponding [folder](https://github.com/emanuelelaface/AmigaBlueKick/tree/main/android/AmigaBlueKick/app/release). There is currently no official distribution on Google Play due to the complications involved in meeting Google's beta testing and other requirements.
 
 ---
 
